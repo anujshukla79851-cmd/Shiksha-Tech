@@ -1,0 +1,187 @@
+ * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #1f2937;
+}
+
+.dashboard {
+    min-height: 100vh;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.dashboard > h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #1e3a8a;
+}
+
+/* Common Section */
+
+.dashboard section {
+    background: white;
+    padding: 24px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.dashboard section h2 {
+    margin-top: 0;
+    color: #2563eb;
+    text-transform: capitalize;
+}
+
+.dashboard section p {
+    line-height: 1.6;
+}
+
+/* Welcome */
+
+.welcome-section {
+    text-align: center;
+}
+
+/* Profile + Skills Grid */
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.dashboard-grid section {
+    margin-bottom: 0;
+}
+
+/* Skills */
+
+.skill-item {
+    margin-bottom: 18px;
+}
+
+.skill-item span {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #e5e7eb;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    border-radius: 10px;
+    background-color: #2563eb;
+}
+
+.html-progress {
+    width: 90%;
+}
+
+.css-progress {
+    width: 80%;
+}
+
+.js-progress {
+    width: 50%;
+}
+
+/* Assessment */
+
+.assessment-section {
+    text-align: center;
+}
+
+.dashboard button {
+    padding: 12px 22px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.dashboard button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Skill Gaps */
+
+.gap-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.gap-item {
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f8fafc;
+    border: 1px solid #e5e7eb;
+}
+
+.gap-item strong {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.gap-item span {
+    font-size: 14px;
+    color: #6b7280;
+}
+
+/* Roadmap */
+
+.dashboard ol {
+    padding-left: 25px;
+}
+
+.dashboard li {
+    margin-bottom: 10px;
+}
+
+.roadmap li {
+    padding: 8px;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .dashboard {
+        padding: 20px;
+    }
+
+    .dashboard section {
+        padding: 18px;
+    }
+
+    .dashboard > h1 {
+        font-size: 28px;
+    }
+
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-grid section {
+        margin-bottom: 20px;
+    }
+
+    .gap-list {
+        grid-template-columns: 1fr;
+    }
+}
